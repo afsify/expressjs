@@ -10,7 +10,7 @@ const profileRouter = require("./router/profile.router");
 app.use("/", profileRouter);
 
 // Application level Middleware to log the time and date of each request
-app.use(printDate)
+app.use(printDate);
 //! app level middlewares always put on top
 
 // Respond with an HTML message when a GET request is made to the root URL
